@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.M7Projecte02">
         <activity
+            android:name=".A02_Fundacio"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

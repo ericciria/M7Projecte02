@@ -7,4 +7,7 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="activat">#FF000000</color>
+    <color name="desactivat">#FFB4AF9C</color>
+    <color name="Pantone646">#FF6B88B2</color>
 </resources>
