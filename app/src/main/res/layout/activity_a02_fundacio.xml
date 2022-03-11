@@ -9,16 +9,18 @@
 
     <ImageButton
         android:id="@+id/ibBotoText"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
-        android:background="#000000"
-        android:scaleType="centerInside"
+        android:adjustViewBounds="false"
+        android:backgroundTint="#000000"
+        android:foreground="@drawable/AppBarIcona_MidaLletra"
+        android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/AppBarIcona_MidaLletra"
-        app:tint="#00000000" />
+        app:tint="#00000000"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <LinearLayout
         android:id="@+id/llBody"
@@ -28,7 +30,7 @@
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ivLogo"
+        app:layout_constraintTop_toBottomOf="@+id/ibBotoText"
         tools:ignore="NotSibling">
 
         <LinearLayout
@@ -44,6 +46,7 @@
                 android:layout_height="175dp"
                 android:background="#000000"
                 android:backgroundTint="#000000"
+                android:foreground="@drawable/LogoColeccio"
                 app:srcCompat="@drawable/LogoColeccio" />
 
         </LinearLayout>
