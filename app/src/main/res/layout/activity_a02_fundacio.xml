@@ -22,17 +22,62 @@
         app:tint="#00000000"
         tools:ignore="SpeakableTextPresentCheck" />
 
+    <LinearLayout
+        android:id="@+id/llBody"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ibBotoText"
+        tools:ignore="NotSibling">
+
+        <LinearLayout
+            android:id="@+id/llLogo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivLogo"
+                android:layout_width="250dp"
+                android:layout_height="175dp"
+                android:background="#000000"
+                android:backgroundTint="#000000"
+                android:foreground="@drawable/logocoleccio"
+                app:srcCompat="@drawable/logocoleccio" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvTextInici"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/roboto_regular"
+            android:justificationMode="inter_word"
+            android:text="@string/text_inici"
+            android:scrollbars = "vertical"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginTop="613dp"
-        android:elevation="2dp"
+        android:layout_height="80dp"
+        android:layout_weight="1"
         android:background="#000000"
+        android:scrollbarAlwaysDrawHorizontalTrack="false"
+        android:scrollbarAlwaysDrawVerticalTrack="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintStart_toStartOf="parent">
 
         <ImageButton
             android:id="@+id/imageButton3"
@@ -171,48 +216,8 @@
             app:layout_constraintEnd_toStartOf="@+id/imageButton5"
             app:layout_constraintStart_toEndOf="@+id/imageButton4"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/botonera_iconaartistes_low" />
+            app:srcCompat="@drawable/botonera_iconaartistes_low"
+            tools:ignore="SpeakableTextPresentCheck" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <LinearLayout
-        android:id="@+id/llBody"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:background="#FFFFFF"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ibBotoText"
-        tools:ignore="NotSibling">
-
-        <LinearLayout
-            android:id="@+id/llLogo"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="#000000"
-            android:orientation="vertical">
-
-            <ImageView
-                android:id="@+id/ivLogo"
-                android:layout_width="250dp"
-                android:layout_height="175dp"
-                android:background="#000000"
-                android:backgroundTint="#000000"
-                android:foreground="@drawable/logocoleccio"
-                app:srcCompat="@drawable/logocoleccio" />
-
-        </LinearLayout>
-
-        <TextView
-            android:id="@+id/tvTextInici"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="10dp"
-            android:fontFamily="@font/roboto_regular"
-            android:text="@string/text_inici"
-            android:textSize="20sp" />
-
-    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
