@@ -15,7 +15,7 @@
         android:layout_marginEnd="10dp"
         android:adjustViewBounds="false"
         android:backgroundTint="#000000"
-        android:foreground="@drawable/AppBarIcona_MidaLletra"
+        android:foreground="@drawable/appbaricona_midalletra"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -46,8 +46,8 @@
                 android:layout_height="175dp"
                 android:background="#000000"
                 android:backgroundTint="#000000"
-                android:foreground="@drawable/LogoColeccio"
-                app:srcCompat="@drawable/LogoColeccio" />
+                android:foreground="@drawable/logocoleccio"
+                app:srcCompat="@drawable/logocoleccio" />
 
         </LinearLayout>
 
@@ -58,7 +58,7 @@
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="10dp"
-            android:fontFamily="@font/Roboto_Regular"
+            android:fontFamily="@font/roboto_regular"
             android:text="@string/text_inici"
             android:textSize="20sp" />
 
