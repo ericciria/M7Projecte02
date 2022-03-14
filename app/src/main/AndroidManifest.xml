@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.M7Projecte02">
         <activity
+            android:name=".A05_Artistes"
+            android:exported="false" />
+        <activity
+            android:name=".A04_Escultures"
+            android:exported="false" />
+        <activity
+            android:name=".A03_Mapa"
+            android:exported="false" />
+        <activity
             android:name=".A02_Fundacio"
             android:exported="false" />
         <activity

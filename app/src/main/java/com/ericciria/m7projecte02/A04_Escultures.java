@@ -6,19 +6,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class MainActivity extends AppCompatActivity {
+public class A04_Escultures extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-
-
-
-
+        setContentView(R.layout.activity_a04_escultures);
     }
-
 
     public void anarAMapa (View v) {
         Intent mapejar = new Intent(this, A03_Mapa.class);
@@ -46,6 +40,5 @@ public class MainActivity extends AppCompatActivity {
         startActivity(fundar);
 
     }
-
 
 }

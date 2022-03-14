@@ -10,4 +10,6 @@
     <color name="activat">#FF000000</color>
     <color name="desactivat">#FFB4AF9C</color>
     <color name="Pantone646">#FF6B88B2</color>
+    <color name="Activat">#000000</color>
+    <color name="Desactivat">#B4AF9C</color>
 </resources>
