@@ -3,15 +3,21 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/AndroidProjects/M7Projecte02/app/src/main/res/layout/activity_a02_fundacio.xml" value="0.25416666666666665" />
-        <entry key="..\:/AndroidProjects/M7Projecte02/app/src/main/res/layout/activity_a03_mapa.xml" value="0.25416666666666665" />
-        <entry key="..\:/AndroidProjects/M7Projecte02/app/src/main/res/layout/activity_a04_escultures.xml" value="0.25416666666666665" />
-        <entry key="..\:/AndroidProjects/M7Projecte02/app/src/main/res/layout/activity_a05_artistes.xml" value="0.25416666666666665" />
-        <entry key="..\:/AndroidProjects/M7Projecte02/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/Eric/AndroidStudioProjects/M7Projecte02/app/src/main/res/font/roboto.xml" value="0.14322916666666666" />
+        <entry key="..\:/Users/Eric/AndroidStudioProjects/M7Projecte02/app/src/main/res/layout/activity_a02_fundacio.xml" value="0.264" />
+        <entry key="..\:/Users/Eric/AndroidStudioProjects/M7Projecte02/app/src/main/res/layout/activity_a03_mapa.xml" value="0.1" />
+        <entry key="..\:/Users/Eric/AndroidStudioProjects/M7Projecte02/app/src/main/res/layout/activity_a041_escultures.xml" value="0.1" />
+        <entry key="..\:/Users/Eric/AndroidStudioProjects/M7Projecte02/app/src/main/res/layout/activity_a042_escultures.xml" value="0.1" />
+        <entry key="..\:/Users/Eric/AndroidStudioProjects/M7Projecte02/app/src/main/res/layout/activity_a04_escultures.xml" value="0.1" />
+        <entry key="..\:/Users/Eric/AndroidStudioProjects/M7Projecte02/app/src/main/res/layout/activity_a051_artistes.xml" value="0.1" />
+        <entry key="..\:/Users/Eric/AndroidStudioProjects/M7Projecte02/app/src/main/res/layout/activity_a052_artistes.xml" value="0.1" />
+        <entry key="..\:/Users/Eric/AndroidStudioProjects/M7Projecte02/app/src/main/res/layout/activity_a05_artistes.xml" value="0.264" />
+        <entry key="..\:/Users/Eric/AndroidStudioProjects/M7Projecte02/app/src/main/res/layout/activity_main.xml" value="0.2" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="Android API 29 Platform" project-jdk-type="Android SDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>
