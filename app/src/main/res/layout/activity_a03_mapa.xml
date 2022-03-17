@@ -9,14 +9,14 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginTop="613dp"
+        android:layout_height="80dp"
         android:layout_weight="1"
         android:background="#000000"
+        android:scrollbarAlwaysDrawHorizontalTrack="false"
+        android:scrollbarAlwaysDrawVerticalTrack="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintStart_toStartOf="parent">
 
         <ImageButton
             android:id="@+id/imageButton3"
@@ -63,7 +63,7 @@
             android:fontFamily="@font/roboto_regular"
             android:onClick="anarAMapa"
             android:text="@string/Mapa"
-            android:textColor="@color/Desactivat"
+            android:textColor="@color/Activat"
             android:textIsSelectable="false"
             android:textSize="12sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -118,6 +118,7 @@
             android:layout_weight="1"
             android:background="@color/black"
             android:onClick="anarAMapa"
+            android:tint="@color/Activat"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/imageButton6"
             app:layout_constraintStart_toEndOf="@+id/imageButton3"
@@ -155,6 +156,17 @@
             app:layout_constraintEnd_toStartOf="@+id/imageButton5"
             app:layout_constraintStart_toEndOf="@+id/imageButton4"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/botonera_iconaartistes_low" />
+            app:srcCompat="@drawable/botonera_iconaartistes_low"
+            tools:ignore="SpeakableTextPresentCheck" />
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tv03Mapa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="03_Mapa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

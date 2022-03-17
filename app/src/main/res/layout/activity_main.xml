@@ -55,14 +55,12 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginTop="613dp"
+        android:layout_height="80dp"
         android:layout_weight="1"
         android:background="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintStart_toStartOf="parent">
 
 
         <ImageButton
@@ -202,7 +200,8 @@
             app:layout_constraintEnd_toStartOf="@+id/imageButton5"
             app:layout_constraintStart_toEndOf="@+id/imageButton4"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/botonera_iconaartistes_low" />
+            app:srcCompat="@drawable/botonera_iconaartistes_low"
+            tools:ignore="SpeakableTextPresentCheck" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
