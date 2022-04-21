@@ -1,0 +1,185 @@
+{
+  "project_info": {
+    "project_number": "997523703438",
+    "firebase_url": "https://prova-firebase-17d1a-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "prova-firebase-17d1a",
+    "storage_bucket": "prova-firebase-17d1a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:997523703438:android:05eac3fe7f76845a6febdf",
+        "android_client_info": {
+          "package_name": "com.alain.cursos.menudecomidasbasic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "997523703438-iv2fj5t74qkcj422q99da8vel6jhm2ap.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOM7482urwrSQDs15K70c45uWe_buXq54"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "997523703438-iv2fj5t74qkcj422q99da8vel6jhm2ap.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:997523703438:android:54e14ed91661599d6febdf",
+        "android_client_info": {
+          "package_name": "com.ericciria.m102_loginfirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "997523703438-iv2fj5t74qkcj422q99da8vel6jhm2ap.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOM7482urwrSQDs15K70c45uWe_buXq54"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "997523703438-iv2fj5t74qkcj422q99da8vel6jhm2ap.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:997523703438:android:46a808655cff01f46febdf",
+        "android_client_info": {
+          "package_name": "com.ericciria.m7projecte02"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "997523703438-iv2fj5t74qkcj422q99da8vel6jhm2ap.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOM7482urwrSQDs15K70c45uWe_buXq54"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "997523703438-iv2fj5t74qkcj422q99da8vel6jhm2ap.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:997523703438:android:d79a99f6ce50342c6febdf",
+        "android_client_info": {
+          "package_name": "com.ericciria.prova_firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "997523703438-iv2fj5t74qkcj422q99da8vel6jhm2ap.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOM7482urwrSQDs15K70c45uWe_buXq54"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "997523703438-iv2fj5t74qkcj422q99da8vel6jhm2ap.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:997523703438:android:2e36b8d542c8455d6febdf",
+        "android_client_info": {
+          "package_name": "com.ericciria.provam7firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "997523703438-iv2fj5t74qkcj422q99da8vel6jhm2ap.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOM7482urwrSQDs15K70c45uWe_buXq54"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "997523703438-iv2fj5t74qkcj422q99da8vel6jhm2ap.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:997523703438:android:8a784ddfb27552156febdf",
+        "android_client_info": {
+          "package_name": "provaM7.asd"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "997523703438-iv2fj5t74qkcj422q99da8vel6jhm2ap.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOM7482urwrSQDs15K70c45uWe_buXq54"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "997523703438-iv2fj5t74qkcj422q99da8vel6jhm2ap.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

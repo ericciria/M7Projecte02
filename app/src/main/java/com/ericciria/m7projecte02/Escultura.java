@@ -1,0 +1,129 @@
+package com.ericciria.m7projecte02;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+public class Escultura {
+
+    private String idEscultura;
+    private Map<String, String> nom;
+    private Map<String, String> material;
+    private Double altura;
+    private Double amplada;
+    private Double pes;
+    private Integer any;
+    private Map<String, Byte[]> audio;
+    private List<Byte[]> imatges;
+    private Double latitud;
+    private Double longitud;
+
+    public Escultura() {
+        nom = new HashMap<String, String>();
+        material = new HashMap<String, String>();
+        audio = new HashMap<String, Byte[]>();
+        imatges = new ArrayList<Byte[]>();
+    }
+
+    public Escultura(String idEscultura, Map<String, String> nom, Map<String, String> material,
+                     Double altura, Double amplada, Double pes, Integer any,
+                     Map<String, Byte[]> audio, List<Byte[]> imatges, Double latitud, Double longitud) {
+        this();
+        this.idEscultura = idEscultura;
+        this.altura = altura;
+        this.amplada = amplada;
+        this.pes = pes;
+        this.any = any;
+        this.latitud = latitud;
+        this.longitud = longitud;
+    }
+
+    public String getIdEscultura() {
+        return idEscultura;
+    }
+
+    public void setIdEscultura(String idEscultura) {
+        this.idEscultura = idEscultura;
+    }
+
+    public Map<String, String> getNom() {
+        return nom;
+    }
+
+    public void setNom(Map<String, String> nom) {
+        this.nom = nom;
+    }
+
+    public Map<String, String> getMaterial() {
+        return material;
+    }
+
+    public void setMaterial(Map<String, String> material) {
+        this.material = material;
+    }
+
+    public Double getAltura() {
+        return altura;
+    }
+
+    public void setAltura(Double altura) {
+        this.altura = altura;
+    }
+
+    public Double getAmplada() {
+        return amplada;
+    }
+
+    public void setAmplada(Double amplada) {
+        this.amplada = amplada;
+    }
+
+    public Double getPes() {
+        return pes;
+    }
+
+    public void setPes(Double pes) {
+        this.pes = pes;
+    }
+
+    public Integer getAny() {
+        return any;
+    }
+
+    public void setAny(Integer any) {
+        this.any = any;
+    }
+
+    public Map<String, Byte[]> getAudio() {
+        return audio;
+    }
+
+    public void setAudio(Map<String, Byte[]> audio) {
+        this.audio = audio;
+    }
+
+    public List<Byte[]> getImatges() {
+        return imatges;
+    }
+
+    public void setImatges(List<Byte[]> imatges) {
+        this.imatges = imatges;
+    }
+
+    public Double getLatitud() {
+        return latitud;
+    }
+
+    public void setLatitud(Double latitud) {
+        this.latitud = latitud;
+    }
+
+    public Double getLongitud() {
+        return longitud;
+    }
+
+    public void setLongitud(Double longitud) {
+        this.longitud = longitud;
+    }
+}
