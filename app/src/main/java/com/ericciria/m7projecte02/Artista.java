@@ -1,5 +1,6 @@
 package com.ericciria.m7projecte02;
 
+import com.google.firebase.firestore.Blob;
 import java.util.Map;
 
 public class Artista {
@@ -10,15 +11,15 @@ public class Artista {
     private Integer anyDefuncio;
     private Map<String, String> biografia;
     private Map<String, String> correntArtistic;
-    private Map<String, Byte[]> audio;
-    private Byte[] foto;
+    private Map<String, Blob[]> audio;
+    private Blob[] foto;
 
     public Artista() {
     }
 
     public Artista(String idArtista, String nom, String cognoms, Integer anyNaixement, Integer anyDefuncio,
                    Map<String, String> biografia, Map<String, String> correntArtistic,
-                   Map<String, Byte[]> audio, Byte[] foto) {
+                   Map<String, Blob[]> audio, Blob[] foto) {
         this.idArtista = idArtista;
         this.nom = nom;
         this.cognoms = cognoms;
@@ -86,19 +87,19 @@ public class Artista {
         this.correntArtistic = correntArtistic;
     }
 
-    public Map<String, Byte[]> getAudio() {
+    public Map<String, Blob[]> getAudio() {
         return audio;
     }
 
-    public void setAudio(Map<String, Byte[]> audio) {
+    public void setAudio(Map<String, Blob[]> audio) {
         this.audio = audio;
     }
 
-    public Byte[] getFoto() {
+    public Blob[] getFoto() {
         return foto;
     }
 
-    public void setFoto(Byte[] foto) {
+    public void setFoto(Blob[] foto) {
         this.foto = foto;
     }
 }

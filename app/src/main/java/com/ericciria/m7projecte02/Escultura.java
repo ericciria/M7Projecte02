@@ -1,5 +1,7 @@
 package com.ericciria.m7projecte02;
 
+import com.google.firebase.firestore.Blob;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -14,21 +16,21 @@ public class Escultura {
     private Double amplada;
     private Double pes;
     private Integer any;
-    private Map<String, Byte[]> audio;
-    private List<Byte[]> imatges;
+    private Map<String, Blob[]> audio;
+    private List<Blob[]> imatges;
     private Double latitud;
     private Double longitud;
 
     public Escultura() {
         nom = new HashMap<String, String>();
         material = new HashMap<String, String>();
-        audio = new HashMap<String, Byte[]>();
-        imatges = new ArrayList<Byte[]>();
+        audio = new HashMap<String, Blob[]>();
+        imatges = new ArrayList<Blob[]>();
     }
 
     public Escultura(String idEscultura, Map<String, String> nom, Map<String, String> material,
                      Double altura, Double amplada, Double pes, Integer any,
-                     Map<String, Byte[]> audio, List<Byte[]> imatges, Double latitud, Double longitud) {
+                     Map<String, Blob[]> audio, List<Blob[]> imatges, Double latitud, Double longitud) {
         this();
         this.idEscultura = idEscultura;
         this.altura = altura;
@@ -95,19 +97,19 @@ public class Escultura {
         this.any = any;
     }
 
-    public Map<String, Byte[]> getAudio() {
+    public Map<String, Blob[]> getAudio() {
         return audio;
     }
 
-    public void setAudio(Map<String, Byte[]> audio) {
+    public void setAudio(Map<String, Blob[]> audio) {
         this.audio = audio;
     }
 
-    public List<Byte[]> getImatges() {
+    public List<Blob[]> getImatges() {
         return imatges;
     }
 
-    public void setImatges(List<Byte[]> imatges) {
+    public void setImatges(List<Blob[]> imatges) {
         this.imatges = imatges;
     }
 
