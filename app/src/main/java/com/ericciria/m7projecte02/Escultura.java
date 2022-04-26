@@ -41,6 +41,18 @@ public class Escultura {
         this.longitud = longitud;
     }
 
+    public Escultura(String idEscultura, Double altura, Double amplada, Double pes, Integer any,
+                     Double latitud, Double longitud) {
+        this();
+        this.idEscultura = idEscultura;
+        this.altura = altura;
+        this.amplada = amplada;
+        this.pes = pes;
+        this.any = any;
+        this.latitud = latitud;
+        this.longitud = longitud;
+    }
+
     public String getIdEscultura() {
         return idEscultura;
     }
