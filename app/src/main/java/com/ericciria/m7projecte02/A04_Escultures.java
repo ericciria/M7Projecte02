@@ -2,6 +2,7 @@ package com.ericciria.m7projecte02;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -42,9 +43,9 @@ public class A04_Escultures extends AppCompatActivity {
 
         // Si volem llista, activem el new LinearLayout...(); si volem grid, activem
         // el new GridLayout...(), indicant el nombre de columnes.
-        esculturesLayout = new LinearLayoutManager(this);
-        //ratafiesLayout = new GridLayoutManager(this, 2);
-        rvEscultures.setLayoutManager(esculturesLayout);
+        //esculturesLayout = new LinearLayoutManager(this);
+        //rvEscultures.setLayoutManager(esculturesLayout);
+        rvEscultures.setLayoutManager(new GridLayoutManager(this,2));
 
         // Creem el model de dades que mostrarem al RecyclerView. Executem una consulta sobre
         // la base de dades i guardem els resultats en un ArrayList.

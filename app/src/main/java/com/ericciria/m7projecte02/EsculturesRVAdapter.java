@@ -46,9 +46,10 @@ public class EsculturesRVAdapter extends RecyclerView.Adapter <EsculturesRVAdapt
     public void onBindViewHolder(EsculturaHolder holder, int position) {
 
         // Enllacem el TextView del nom de l'element amb l'atribut nom
-        TextView tvNom = (TextView)holder.element.findViewById(R.id.tvNomRatafia);
+        TextView tvNom = (TextView)holder.element.findViewById(R.id.tvNom);
         tvNom.setText(escultures.get(position).getIdEscultura());
 
+        /*
         // Enllacem el TextView de l'origen de l'element amb els atributs
         TextView tvPunts = (TextView)holder.element.findViewById(R.id.tvOrigen);
         tvPunts.setText(String.format("%s (%s)",
@@ -61,7 +62,7 @@ public class EsculturesRVAdapter extends RecyclerView.Adapter <EsculturesRVAdapt
 
         // Enllacem el TextView de la graduació amb l'atribut graduació.
         TextView tvGraduacio = (TextView)holder.element.findViewById(R.id.tvGraduacio);
-        tvGraduacio.setText(String.format("%.1fº", escultures.get(position).getLatitud()));
+        tvGraduacio.setText(String.format("%.1fº", escultures.get(position).getLatitud()));*/
 
         // Enllacem el ImageView de la foto amb l'atribut foto.
         /*byte[] foto = escultures.get(position).getFoto();
