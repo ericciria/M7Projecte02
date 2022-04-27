@@ -3,6 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidProjects/M7Projecte02/app/src/main/res/layout/activity_a02_fundacio.xml" value="0.4" />
+        <entry key="..\:/AndroidProjects/M7Projecte02/app/src/main/res/layout/activity_a03_mapa.xml" value="0.2351851851851852" />
+        <entry key="..\:/AndroidProjects/M7Projecte02/app/src/main/res/layout/activity_a041_escultures.xml" value="0.2351851851851852" />
+        <entry key="..\:/AndroidProjects/M7Projecte02/app/src/main/res/layout/activity_a042_escultures.xml" value="0.264" />
+        <entry key="..\:/AndroidProjects/M7Projecte02/app/src/main/res/layout/activity_a04_escultures.xml" value="0.2351851851851852" />
+        <entry key="..\:/AndroidProjects/M7Projecte02/app/src/main/res/layout/activity_a051_artistes.xml" value="0.2351851851851852" />
+        <entry key="..\:/AndroidProjects/M7Projecte02/app/src/main/res/layout/activity_a052_artistes.xml" value="0.2351851851851852" />
+        <entry key="..\:/AndroidProjects/M7Projecte02/app/src/main/res/layout/activity_a05_artistes.xml" value="0.2351851851851852" />
+        <entry key="..\:/AndroidProjects/M7Projecte02/app/src/main/res/layout/activity_main.xml" value="0.2351851851851852" />
+        <entry key="..\:/AndroidProjects/M7Projecte02/app/src/main/res/layout/item_artista.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidProjects/M7Projecte02/app/src/main/res/layout/item_escultura.xml" value="0.2351851851851852" />
         <entry key="..\:/Users/Eric/AndroidStudioProjects/M7Projecte02/app/src/main/res/drawable-v24/vores.xml" value="0.1165" />
         <entry key="..\:/Users/Eric/AndroidStudioProjects/M7Projecte02/app/src/main/res/font/roboto.xml" value="0.14322916666666666" />
         <entry key="..\:/Users/Eric/AndroidStudioProjects/M7Projecte02/app/src/main/res/layout/activity_a02_fundacio.xml" value="0.264" />
@@ -14,7 +25,7 @@
         <entry key="..\:/Users/Eric/AndroidStudioProjects/M7Projecte02/app/src/main/res/layout/activity_a052_artistes.xml" value="0.1" />
         <entry key="..\:/Users/Eric/AndroidStudioProjects/M7Projecte02/app/src/main/res/layout/activity_a05_artistes.xml" value="0.264" />
         <entry key="..\:/Users/Eric/AndroidStudioProjects/M7Projecte02/app/src/main/res/layout/activity_main.xml" value="0.152" />
-        <entry key="..\:/Users/Eric/AndroidStudioProjects/M7Projecte02/app/src/main/res/layout/item_escultura.xml" value="0.264" />
+        <entry key="..\:/Users/Eric/AndroidStudioProjects/M7Projecte02/app/src/main/res/layout/item_escultura.xml" value="1.0263157894736843" />
       </map>
     </option>
   </component>

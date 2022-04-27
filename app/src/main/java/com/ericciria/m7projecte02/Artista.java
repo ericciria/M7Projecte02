@@ -31,6 +31,14 @@ public class Artista {
         this.foto = foto;
     }
 
+    public Artista (String idArtista, String nom, String cognoms, Integer anyNaixement, Integer anyDefuncio) {
+        this.idArtista = idArtista;
+        this.nom = nom;
+        this.cognoms = cognoms;
+        this.anyNaixement = anyNaixement;
+        this.anyDefuncio = anyDefuncio;
+    }
+
     public String getIdArtista() {
         return idArtista;
     }
