@@ -73,7 +73,7 @@ public class A05_Artistes extends AppCompatActivity {
         super.onResume();
         db.collection("artistes")
                 //.document("asd1")
-                .whereGreaterThan("anyNaixament",0)
+                .whereGreaterThan("anyNaixement",0)
                 .get()
                 .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
                     @Override
@@ -85,15 +85,15 @@ public class A05_Artistes extends AppCompatActivity {
                                         document.get("idArtista").toString(),
                                         document.get("nom").toString(),
                                         document.get("cognoms").toString(),
-                                        Integer.valueOf(document.get("anyNaixament").toString()),
+                                        Integer.valueOf(document.get("anyNaixement").toString()),
                                         Integer.valueOf(document.get("anyDefuncio").toString())
                                         );
                                 artista.add(nouArtista);
                             }
                             artistesesAdapter = new ArtistaRVAdapter(artista);
-
                             // Associem l'Adapter al RecyclerView.
                             rvArtistes.setAdapter(artistesesAdapter);
+
                         } else {
                             Toast.makeText(A05_Artistes.this, "No existeix", Toast.LENGTH_SHORT).show();
                         }

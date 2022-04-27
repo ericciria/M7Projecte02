@@ -49,26 +49,6 @@ public class ArtistaRVAdapter extends RecyclerView.Adapter <ArtistaRVAdapter.Art
         TextView tvNom = (TextView)holder.element.findViewById(R.id.tvNom);
         tvNom.setText(artistes.get(position).getNom());
 
-        /*
-        // Enllacem el TextView de l'origen de l'element amb els atributs
-        TextView tvPunts = (TextView)holder.element.findViewById(R.id.tvOrigen);
-        tvPunts.setText(String.format("%s (%s)",
-                escultures.get(position).getAltura(),
-                escultures.get(position).getAmplada()));
-
-        // Enllacem el TextView de la capacitat amb l'atribut capacitat.
-        TextView tvCapacitatCL = (TextView)holder.element.findViewById(R.id.tvCapacitatCL);
-        tvCapacitatCL.setText(String.format("%d cl", escultures.get(position).getAny()));
-
-        // Enllacem el TextView de la graduació amb l'atribut graduació.
-        TextView tvGraduacio = (TextView)holder.element.findViewById(R.id.tvGraduacio);
-        tvGraduacio.setText(String.format("%.1fº", escultures.get(position).getLatitud()));*/
-
-        // Enllacem el ImageView de la foto amb l'atribut foto.
-        /*byte[] foto = escultures.get(position).getFoto();
-        ImageView ivFoto = (ImageView) holder.element.findViewById(R.id.ivFotoRatafia);
-        Bitmap bmp = BitmapFactory.decodeByteArray(foto, 0, foto.length);
-        ivFoto.setImageBitmap(bmp);*/
     }
 
     // Mètode que retorna el nombre d'elements del DataSet que mostrem a la llista.
