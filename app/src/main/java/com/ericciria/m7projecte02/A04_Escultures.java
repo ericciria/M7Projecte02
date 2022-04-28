@@ -73,7 +73,7 @@ public class A04_Escultures extends AppCompatActivity {
                     public void onComplete(@NonNull Task<QuerySnapshot> task) {
                         if (task.isSuccessful()) {
                             for (QueryDocumentSnapshot document : task.getResult()) {
-                                Toast.makeText(A04_Escultures.this, "" + document.get("idEscultura"), Toast.LENGTH_SHORT).show();
+                                //Toast.makeText(A04_Escultures.this, "" + document.get("idEscultura"), Toast.LENGTH_SHORT).show();
                                 Escultura novaEscultura = new Escultura(
                                         document.get("idEscultura").toString(),
                                         Double.valueOf(document.get("altura").toString()),
@@ -95,7 +95,7 @@ public class A04_Escultures extends AppCompatActivity {
                     }
                 });
 
-        Toast.makeText(A04_Escultures.this, "AAA" + esculturesAdapter, Toast.LENGTH_SHORT).show();
+        //Toast.makeText(A04_Escultures.this, "AAA" + esculturesAdapter, Toast.LENGTH_SHORT).show();
         //Toast.makeText(A04_Escultures.this, esculturesAdapter.getItemCount(), Toast.LENGTH_SHORT).show();
     }
 

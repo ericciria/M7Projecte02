@@ -109,8 +109,9 @@ public class A03_Mapa extends FragmentActivity implements OnMapReadyCallback, Lo
         //per fer zoom en el dispositiu fisic
         UiSettings settings = mMap.getUiSettings();
         settings.setZoomControlsEnabled(true);
+        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(origin, 15.0f));
 
-        mMap.setMapType(GoogleMap.MAP_TYPE_SATELLITE);
+        mMap.setMapType(GoogleMap.MAP_TYPE_HYBRID);
 
         db = FirebaseFirestore.getInstance();
         db.collection("escultures")

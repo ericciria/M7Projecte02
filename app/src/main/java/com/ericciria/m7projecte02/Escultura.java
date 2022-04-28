@@ -1,6 +1,7 @@
 package com.ericciria.m7projecte02;
 
 import com.google.firebase.firestore.Blob;
+import com.google.firebase.firestore.DocumentReference;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -16,16 +17,17 @@ public class Escultura {
     private Double amplada;
     private Double pes;
     private Integer any;
-    private Map<String, Blob[]> audio;
-    private List<Blob[]> imatges;
+    private Map<String, Blob> audio;
+    private List<Blob> imatges;
     private Double latitud;
     private Double longitud;
+    private DocumentReference artista;
 
     public Escultura() {
         nom = new HashMap<String, String>();
         material = new HashMap<String, String>();
-        audio = new HashMap<String, Blob[]>();
-        imatges = new ArrayList<Blob[]>();
+        audio = new HashMap<String, Blob>();
+        imatges = new ArrayList<Blob>();
     }
 
     public Escultura(String idEscultura, Map<String, String> nom, Map<String, String> material,
@@ -109,19 +111,19 @@ public class Escultura {
         this.any = any;
     }
 
-    public Map<String, Blob[]> getAudio() {
+    public Map<String, Blob> getAudio() {
         return audio;
     }
 
-    public void setAudio(Map<String, Blob[]> audio) {
+    public void setAudio(Map<String, Blob> audio) {
         this.audio = audio;
     }
 
-    public List<Blob[]> getImatges() {
+    public List<Blob> getImatges() {
         return imatges;
     }
 
-    public void setImatges(List<Blob[]> imatges) {
+    public void setImatges(List<Blob> imatges) {
         this.imatges = imatges;
     }
 
@@ -140,4 +142,8 @@ public class Escultura {
     public void setLongitud(Double longitud) {
         this.longitud = longitud;
     }
+
+    public DocumentReference getArtista() { return artista; }
+
+    public void setArtista(DocumentReference artista) { this.artista = artista; }
 }

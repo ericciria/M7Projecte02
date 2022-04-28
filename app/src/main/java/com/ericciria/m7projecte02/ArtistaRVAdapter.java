@@ -1,12 +1,23 @@
 package com.ericciria.m7projecte02;
 
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
+import android.os.Debug;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.firebase.firestore.Blob;
+
+import java.io.ByteArrayOutputStream;
+import java.io.Console;
 import java.util.ArrayList;
 
 public class ArtistaRVAdapter extends RecyclerView.Adapter <ArtistaRVAdapter.ArtistaHolder> {
@@ -45,8 +56,16 @@ public class ArtistaRVAdapter extends RecyclerView.Adapter <ArtistaRVAdapter.Art
     @Override
     public void onBindViewHolder(ArtistaRVAdapter.ArtistaHolder holder, int position) {
 
+        ImageView iv = (ImageView) holder.element.findViewById(R.id.ivFoto);
+        if(obtenirBlobAsBitmap(artistes.get(position).getFoto())!=null){
+            iv.setImageBitmap(obtenirBlobAsBitmap(artistes.get(position).getFoto()));
+        }
+
+
         // Enllacem el TextView del nom de l'element amb l'atribut nom
         TextView tvNom = (TextView)holder.element.findViewById(R.id.tvNom);
+        tvNom.setText(artistes.get(position).getNom() + " " + artistes.get(position).getCognoms());
+        TextView tvEscultures = (TextView)holder.element.findViewById(R.id.tvEscultures);
         tvNom.setText(artistes.get(position).getNom());
 
     }
@@ -55,5 +74,15 @@ public class ArtistaRVAdapter extends RecyclerView.Adapter <ArtistaRVAdapter.Art
     // Aquest mètode el crida el LayoutManager.
     public int getItemCount() {
         return artistes.size();
+    }
+
+    public Bitmap obtenirBlobAsBitmap(Blob blob) {
+        if(blob!=null){
+            byte [] bytes = blob.toBytes();
+            return BitmapFactory.decodeByteArray(bytes, 0 ,bytes.length);
+        }
+        else{
+            return null;
+        }
     }
 }
