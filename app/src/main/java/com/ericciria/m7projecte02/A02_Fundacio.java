@@ -111,9 +111,9 @@ public class A02_Fundacio extends AppCompatActivity {
                 List<Artista> artista = Arrays.asList(
                         art,
                         new Artista("02", "Artista02", "Cognom02", 2000, -1, biografia, correntArtistic, audio, foto),
-                        new Artista("03", "Artista03", "Cognom03", 2000, -1, biografia, correntArtistic, audio, foto),
-                        new Artista("04", "Artista04", "Cognom04", 2000, -1, biografia, correntArtistic, audio, foto),
-                        new Artista("05", "Artista05", "Cognom05", 2000, -1, biografia, correntArtistic, audio, foto)
+                        new Artista("03", "Artista03", "Cognom03", 1980, -1, biografia, correntArtistic, audio, foto),
+                        new Artista("04", "Artista04", "Cognom04", 2002, -1, biografia, correntArtistic, audio, foto),
+                        new Artista("05", "Artista05", "Cognom05", 1968, -1, biografia, correntArtistic, audio, foto)
                 );
 
                 // Bucle que fa la inserció dels artistes.
@@ -142,14 +142,14 @@ public class A02_Fundacio extends AppCompatActivity {
 
                 // Codi que realitzarà unes quantes insercins d'escultures.
                 List<Escultura> escultura = Arrays.asList(
-                        new Escultura("01", nom, material, 25.0, 10.0, 500.0, 2005, audio2, imatges, 25.0, 25.0),
-                        new Escultura("02", nom, material, 25.0, 10.0, 500.0, 2005, audio2, imatges, 30.0, 25.0),
-                        new Escultura("03", nom, material, 25.0, 10.0, 500.0, 2005, audio2, imatges, 25.0, 30.0),
-                        new Escultura("04", nom, material, 25.0, 10.0, 500.0, 2005, audio2, imatges, 40.0, 25.0),
-                        new Escultura("05", nom, material, 25.0, 10.0, 500.0, 2005, audio2, imatges, 25.0, 40.0)
+                        new Escultura("01", nom, material, 25.0, 10.0, 500.0, 2005, audio2, imatges, 41.758934, 2.010258),
+                        new Escultura("02", nom, material, 25.0, 10.0, 500.0, 2005, audio2, imatges, 41.76002, 2.012338),
+                        new Escultura("03", nom, material, 25.0, 10.0, 500.0, 2005, audio2, imatges, 41.761503, 2.014435),
+                        new Escultura("04", nom, material, 25.0, 10.0, 500.0, 2005, audio2, imatges, 41.762471, 2.017482),
+                        new Escultura("05", nom, material, 25.0, 10.0, 500.0, 2005, audio2, imatges, 41.760278, 2.019059)
                 );
 
-                // Bucle que fa la inserció dels artistes.
+                // Bucle que fa la inserció de les escultures.
                 for (Escultura a: escultura) {
                     db.collection("escultures")
                             .document(a.getIdEscultura())

@@ -23,7 +23,9 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.UiSettings;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -33,7 +35,7 @@ import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.ArrayList;
 
-public class A03_Mapa extends FragmentActivity implements OnMapReadyCallback, LocationListener {
+public class A03_Mapa extends FragmentActivity implements OnMapReadyCallback, LocationListener, GoogleMap.OnMarkerClickListener {
 
     private static final int PERMISSION_REQUEST_POSITION = 100;
     private GoogleMap mMap;
@@ -110,7 +112,6 @@ public class A03_Mapa extends FragmentActivity implements OnMapReadyCallback, Lo
         UiSettings settings = mMap.getUiSettings();
         settings.setZoomControlsEnabled(true);
         mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(origin, 15.0f));
-
         mMap.setMapType(GoogleMap.MAP_TYPE_HYBRID);
 
         db = FirebaseFirestore.getInstance();
@@ -133,5 +134,18 @@ public class A03_Mapa extends FragmentActivity implements OnMapReadyCallback, Lo
                         }
                     }
                 });
+
+        mMap.setOnMarkerClickListener(marker -> {
+            marker.setIcon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE));
+            Toast.makeText(this, "Marcador clicat", Toast.LENGTH_SHORT).show();
+            return true;
+        });
+    }
+
+    @Override
+    public boolean onMarkerClick(@NonNull Marker marker) {
+        marker.setIcon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE));
+        Toast.makeText(this, "Marcador clicat", Toast.LENGTH_SHORT).show();
+        return true;
     }
 }
