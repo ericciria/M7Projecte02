@@ -104,16 +104,16 @@ public class A02_Fundacio extends AppCompatActivity {
                                 "dins del concepte de l’escultura cinegètica.");
 
                 Log.i("AppEscultures", "001: arriba");
-                art.setFoto(obtenirAssetAsBlob(getDrawable(R.drawable.logomuseu)));
+                art.setFoto(obtenirAssetAsBlob(getDrawable(R.drawable.face01)));
                 Log.i("AppEscultures", "002: arriba");
                 art.getAudio().put("ca", "audio/aud01.ballantonades.mp3");
 
                 List<Artista> artista = Arrays.asList(
                         art,
-                        new Artista("02", "Artista02", "Cognom02", 2000, -1, biografia, correntArtistic, audio, foto),
-                        new Artista("03", "Artista03", "Cognom03", 1980, -1, biografia, correntArtistic, audio, foto),
-                        new Artista("04", "Artista04", "Cognom04", 2002, -1, biografia, correntArtistic, audio, foto),
-                        new Artista("05", "Artista05", "Cognom05", 1968, -1, biografia, correntArtistic, audio, foto)
+                        new Artista("02", "Artista02", "Cognom02", 2000, -1, biografia, correntArtistic, audio, obtenirAssetAsBlob(getDrawable(R.drawable.face02))),
+                        new Artista("03", "Artista03", "Cognom03", 1980, -1, biografia, correntArtistic, audio, obtenirAssetAsBlob(getDrawable(R.drawable.face03))),
+                        new Artista("04", "Artista04", "Cognom04", 2002, -1, biografia, correntArtistic, audio, obtenirAssetAsBlob(getDrawable(R.drawable.face04))),
+                        new Artista("05", "Artista05", "Cognom05", 1968, -1, biografia, correntArtistic, audio, obtenirAssetAsBlob(getDrawable(R.drawable.face05)))
                 );
 
                 // Bucle que fa la inserció dels artistes.

@@ -51,8 +51,6 @@ public class A04_Escultures extends AppCompatActivity {
         // la base de dades i guardem els resultats en un ArrayList.
         escultures = new ArrayList<Escultura>();
 
-        //escultures = db.collection("asd").get();
-
         /*// Creem l'Adapter que associarem al RecyclerView a partir de l'ArrayList amb
         // les dades.
         esculturesAdapter = new EsculturesRVAdapter(escultures);

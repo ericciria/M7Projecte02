@@ -2,22 +2,17 @@ package com.ericciria.m7projecte02;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.OnFailureListener;
-import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.firestore.Blob;
-import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
@@ -83,6 +78,7 @@ public class A05_Artistes extends AppCompatActivity {
                         if (task.isSuccessful()) {
                             for (QueryDocumentSnapshot document : task.getResult()) {
                                 //Toast.makeText(A05_Artistes.this, "" + document.get("idArtista"), Toast.LENGTH_SHORT).show();
+                                //Toast.makeText(A05_Artistes.this, "" + document.get("foto"), Toast.LENGTH_SHORT).show();
                                 Artista nouArtista = new Artista(
                                         document.get("idArtista").toString(),
                                         document.get("nom").toString(),
@@ -95,7 +91,7 @@ public class A05_Artistes extends AppCompatActivity {
                                         (Blob) document.get("foto")
                                         );
                                 artista.add(nouArtista);
-                                Toast.makeText(A05_Artistes.this, "" + nouArtista.getFoto(), Toast.LENGTH_SHORT).show();
+                                //Toast.makeText(A05_Artistes.this, "" + nouArtista.getFoto(), Toast.LENGTH_SHORT).show();
                             }
                             artistesesAdapter = new ArtistaRVAdapter(artista);
                             // Associem l'Adapter al RecyclerView.

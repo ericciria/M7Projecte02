@@ -15,7 +15,10 @@ import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.Build;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.FrameLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -42,6 +45,7 @@ public class A03_Mapa extends FragmentActivity implements OnMapReadyCallback, Lo
     private LatLng joviat = new LatLng(41.721488333333334, 1.818435);
     FirebaseFirestore db;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -64,6 +68,7 @@ public class A03_Mapa extends FragmentActivity implements OnMapReadyCallback, Lo
             return;
         }
         gestorLoc.requestLocationUpdates(LocationManager.GPS_PROVIDER, 1000, 1, this);
+
 
 
     }
@@ -126,7 +131,9 @@ public class A03_Mapa extends FragmentActivity implements OnMapReadyCallback, Lo
                             for (QueryDocumentSnapshot document : task.getResult()) {
                                 LatLng pos = new LatLng(Double.valueOf(document.get("latitud").toString()),
                                         Double.valueOf(document.get("longitud").toString()));
-                                mMap.addMarker(new MarkerOptions().position(pos).title("Escultura: " + document.get("idEscultura").toString()));
+                                mMap.addMarker(new MarkerOptions().position(pos)
+                                        .title("Escultura: " + document.get("idEscultura").toString())
+                                        .snippet("Altura: " + document.get("altura").toString() + "\nAmplada" + document.get("amplada").toString()));
                             }
 
                         } else {
@@ -136,16 +143,24 @@ public class A03_Mapa extends FragmentActivity implements OnMapReadyCallback, Lo
                 });
 
         mMap.setOnMarkerClickListener(marker -> {
-            marker.setIcon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE));
-            Toast.makeText(this, "Marcador clicat", Toast.LENGTH_SHORT).show();
+            //marker.setIcon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE));
+            //Toast.makeText(this, "Marcador clicat", Toast.LENGTH_SHORT).show();
+            marker.showInfoWindow();
             return true;
         });
+
+
+
+
     }
 
     @Override
     public boolean onMarkerClick(@NonNull Marker marker) {
         marker.setIcon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE));
         Toast.makeText(this, "Marcador clicat", Toast.LENGTH_SHORT).show();
+
         return true;
     }
+
+
 }
