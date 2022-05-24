@@ -1,5 +1,7 @@
 package com.ericciria.m7projecte02;
 
+import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
@@ -54,7 +56,7 @@ public class ArtistaRVAdapter extends RecyclerView.Adapter <ArtistaRVAdapter.Art
     // Mètode que dóna contingut a les vistes dels elements del RecyclerView. Aquest
     // mètode el crida el LayoutManager.
     @Override
-    public void onBindViewHolder(ArtistaRVAdapter.ArtistaHolder holder, int position) {
+    public void onBindViewHolder(ArtistaRVAdapter.ArtistaHolder holder, @SuppressLint("RecyclerView") int position) {
 
         ImageView iv = (ImageView) holder.element.findViewById(R.id.ivFoto);
         if(obtenirBlobAsBitmap(artistes.get(position).getFoto())!=null){
@@ -67,6 +69,14 @@ public class ArtistaRVAdapter extends RecyclerView.Adapter <ArtistaRVAdapter.Art
         tvNom.setText(artistes.get(position).getNom() + " " + artistes.get(position).getCognoms());
         TextView tvEscultures = (TextView)holder.element.findViewById(R.id.tvEscultures);
         tvNom.setText(artistes.get(position).getNom());
+        tvEscultures.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(), A04_2_Escultures.class);
+                intent.putExtra("id", artistes.get(position).getIdArtista());
+                v.getContext().startActivity(intent);
+            }
+        });
 
     }
 

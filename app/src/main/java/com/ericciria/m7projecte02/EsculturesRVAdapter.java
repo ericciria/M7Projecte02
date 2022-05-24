@@ -1,8 +1,12 @@
 package com.ericciria.m7projecte02;
 
+import android.annotation.SuppressLint;
+import android.content.Intent;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
@@ -43,32 +47,22 @@ public class EsculturesRVAdapter extends RecyclerView.Adapter <EsculturesRVAdapt
     // Mètode que dóna contingut a les vistes dels elements del RecyclerView. Aquest
     // mètode el crida el LayoutManager.
     @Override
-    public void onBindViewHolder(EsculturaHolder holder, int position) {
+    public void onBindViewHolder(EsculturaHolder holder, @SuppressLint("RecyclerView") int position) {
 
         // Enllacem el TextView del nom de l'element amb l'atribut nom
         TextView tvNom = (TextView)holder.element.findViewById(R.id.tvNom);
         tvNom.setText(escultures.get(position).getIdEscultura());
 
-        /*
-        // Enllacem el TextView de l'origen de l'element amb els atributs
-        TextView tvPunts = (TextView)holder.element.findViewById(R.id.tvOrigen);
-        tvPunts.setText(String.format("%s (%s)",
-                escultures.get(position).getAltura(),
-                escultures.get(position).getAmplada()));
+        ImageView iv = (ImageView)holder.element.findViewById(R.id.ivFoto);
+        iv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(), A04_2_Escultures.class);
+                intent.putExtra("id", escultures.get(position).getIdEscultura());
+                v.getContext().startActivity(intent);
+            }
+        });
 
-        // Enllacem el TextView de la capacitat amb l'atribut capacitat.
-        TextView tvCapacitatCL = (TextView)holder.element.findViewById(R.id.tvCapacitatCL);
-        tvCapacitatCL.setText(String.format("%d cl", escultures.get(position).getAny()));
-
-        // Enllacem el TextView de la graduació amb l'atribut graduació.
-        TextView tvGraduacio = (TextView)holder.element.findViewById(R.id.tvGraduacio);
-        tvGraduacio.setText(String.format("%.1fº", escultures.get(position).getLatitud()));*/
-
-        // Enllacem el ImageView de la foto amb l'atribut foto.
-        /*byte[] foto = escultures.get(position).getFoto();
-        ImageView ivFoto = (ImageView) holder.element.findViewById(R.id.ivFotoRatafia);
-        Bitmap bmp = BitmapFactory.decodeByteArray(foto, 0, foto.length);
-        ivFoto.setImageBitmap(bmp);*/
     }
 
     // Mètode que retorna el nombre d'elements del DataSet que mostrem a la llista.

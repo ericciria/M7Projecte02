@@ -21,7 +21,13 @@
             android:name=".A05_Artistes"
             android:exported="false" />
         <activity
+            android:name=".A05_2_Artistes"
+            android:exported="false" />
+        <activity
             android:name=".A04_Escultures"
+            android:exported="false" />
+        <activity
+            android:name=".A04_2_Escultures"
             android:exported="false" />
         <activity
             android:name=".A03_Mapa"
